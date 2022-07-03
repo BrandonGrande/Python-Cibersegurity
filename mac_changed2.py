@@ -33,6 +33,7 @@ def get_current_mac(interface):
 (options,arguments) = get_arguments()
 
 current_mac = get_current_mac(options.interface)
+print('------------------')
 print("Curret MAC" + str(current_mac)) 
 change_mac(options.interface, options.new_mac)
 current_mac = get_current_mac(options.interface) 
